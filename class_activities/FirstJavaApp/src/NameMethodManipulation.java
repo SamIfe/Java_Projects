@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+//import static java.util.Collections.min;
+
 public class NameMethodManipulation {
     public static void main(String[] args) {
         Me.sayName();
@@ -27,10 +29,10 @@ public class NameMethodManipulation {
 
 
 
-
     }
 
-
+    private static void min(int i, int i1, int i2) {
+    }
 
 
 }
