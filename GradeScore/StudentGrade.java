@@ -13,9 +13,10 @@ public class StudentGrade {
 		System.out.println ("Saved successfully \n\n");
 
 
-		double scores = 0;
+		int scores = 0;
 		double average = 0;
-		double [][] collectScores = new double [numberOfStudents] [numberOfSubjects];
+		int [][] collectScores = new int [numberOfStudents] [numberOfSubjects];
+		int total = 0;
 		
 		for (int row = 0; row < numberOfStudents; row++) {
 			System.out.println ("Entering score for student " + (row + 1));
@@ -24,7 +25,7 @@ public class StudentGrade {
 
 			do {
 				System.out.print ("Enter score for subject " + (column + 1) + ": ");
-				scores = grade.nextDouble();
+				scores = grade.nextInt();
 				if (scores <= 0 || scores >= 100) {
 					System.out.println("Invalid input; please enter number of scores between 0 and 100 ");
 			
@@ -35,12 +36,45 @@ public class StudentGrade {
 
 		}
 		
+
 			System.out.println ("\n Saving >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
 			System.out.println ("Saved successfully \n");
 
 		}
 
+		System.out.print("======================================================\n");
+		System.out.print("STUDENT  \t");
+		for (int print = 0; print < numberOfSubjects; print++){
+			System.out.print("SUB" + (print + 1) + "\t");
 
+		}
+
+		System.out.print("TOT\tAVE\tPOS\n");
+		System.out.print("======================================================\n");
+
+		for(int sum = 0; sum < collectScores.length; sum++) {
+			average = 0;
+			total = 0;
+			System.out.print("Student" + (sum + 1) + "\t");
+			for(int sum2 = 0; sum2 < collectScores[sum].length; sum2++) {
+				total += collectScores[sum][sum2];
+				System.out.print(collectScores[sum][sum2] + "\t");
+				average = total / numberOfSubjects;
+
+
+			}
+
+				System.out.println(total + "\t" + average);
+				
+		}
+			
+		System.out.println("======================================================");
+		System.out.println("======================================================");
+
+
+		System.out.print("CLASS SUMMARY FOR THE GRADE SCORE  \n");
+
+		
 
 	}
 
