@@ -44,6 +44,25 @@ public class CheckOutApplication {
 
 		}
 
+		
+		System.out.println("What is your name ?");
+		String cashierName = input.next();
+
+		System.out.println("Any discount applied: : ");
+		int discount = input.nextInt();
+
+		System.out.println("SEMICOLON STORES");
+		System.out.println("MAIN BRANCH");
+		System.out.println("LOCATION : 312, HERBERT MACAULAY WAY, SABO YABA, LAGOS.");
+		System.out.println("TEL : 03293828343");
+		System.out.println("DATE : 27/10/2024 , 12 : 50 : 11 pm");
+		System.out.println("Cashier:" + cashierName);
+		System.out.println("Customer Name: "+ name);
+		System.out.println("========================================================================================================================");
+		System.out.println("\t\t\t\t ITEM \tQTY \tPRICE \t\tTOTAL");
+		System.out.println("------------------------------------------------------------------------------------------------------------------------");
+
+
 
 
 
