@@ -6,6 +6,20 @@ public class CheckOutApplication {
 		ArrayList<Integer> quantityPurchased = new ArrayList<>();
 		ArrayList<Integer> priceForEach = new ArrayList<>();
 
+		System.out.println("""
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+		WELCOME TO SEMI-COLON AFRICA MULTI-PURPOSE STORE.
+
+			ADDRESS : 312, HERBERT MACAULAY WAY, SABO YABA, LAGOS.
+			PHONE NUMBER: +23490884456.
+			EMAIL: store@semicolonafrica.com.
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+""");
+
 		Scanner input = new Scanner(System.in);
 	
 		System.out.println("Enter customer's name :");
@@ -57,9 +71,14 @@ public class CheckOutApplication {
 		System.out.println("DATE : 27/10/2024 , 12 : 50 : 11 pm");
 		System.out.println("Cashier:" + cashierName);
 		System.out.println("Customer Name: "+ name);
+
 		System.out.println("====================================================================================================================");
-		System.out.println("\t\t\t\t ITEM \tQTY \tPRICE \t\tTOTAL");
-		System.out.println("--------------------------------------------------------------------------------------------------------------------");
+
+
+		System.out.printf("%-30s%-10s%-10s%-15s%n", "ITEM(s)", "QTY", "PRICE", "TOTAL" );
+
+
+		System.out.println("-------------------------------------------------------------------------------------------------------------------- \n");
 
 
 		double subtotal = 0;
@@ -67,7 +86,7 @@ public class CheckOutApplication {
 		double total = 0;
 	 	total = quantityPurchased.get(index) * priceForEach.get(index);
 		subtotal += total;
-		System.out.printf("%35s%7d%8d%15.2f%n",itemsPurchased.get(index),quantityPurchased.get(index), priceForEach.get(index), total);
+		System.out.printf("%-30s%-10d%-10d%-15.2f%n",itemsPurchased.get(index),quantityPurchased.get(index), priceForEach.get(index), total);
 		
 
 		}
@@ -76,21 +95,23 @@ public class CheckOutApplication {
 		double totalDiscount = subtotal - discount;
 		System.out.println("--------------------------------------------------------------------------------------------------------------------");
 
-		System.out.println("Sub Total : " + subtotal);
+		System.out.print("Sub Total : " + subtotal);
 		System.out.println("Discount at " + discount + ": " + totalDiscount);
 
 
-	double vat = (subtotal / 100) * 7.50;
-	System.out.println("VAT @ 7.50% :" + vat);
-	System.out.println("====================================================================================================================");
-	 double billtotal = totalDiscount + vat ;
+		double vat = (subtotal / 100) * 7.50;
+		System.out.println("VAT @ 7.50% : " + vat);
+		System.out.println("====================================================================================================================");
+	 	double billtotal = totalDiscount + vat ;
 
-	System.out.println("Bill Total:  " + billtotal);
-	System.out.println("====================================================================================================================");
+		System.out.println("Bill Total:  " + billtotal);
+		System.out.println("====================================================================================================================");
 
 
-				System.out.println("HERE IS YOUR RECEIPT Of " + billtotal + "\n THANK YOU FOR BEING A VALUED CUSTOMER OF SEMI-COLON AFRICA!!" );
-	System.out.println("====================================================================================================================");
+		System.out.println("HERE IS YOUR RECEIPT Of " + billtotal + "\n THANK YOU FOR BEING A VALUED CUSTOMER OF SEMI-COLON AFRICA!!" );
+
+
+		System.out.println("====================================================================================================================");
 
 
 
