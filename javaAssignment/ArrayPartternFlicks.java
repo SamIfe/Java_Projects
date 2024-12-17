@@ -2,9 +2,9 @@ public class ArrayPartternFlicks{
 	public static void main(String... arg){
 	
 String[][] partternManipulation = {
-{"X", "O", "X", "O"},
-{"X", "O", "X", "O"}, 
-{"X", "O", "X", "O"}
+{"X", "O", "X"},
+{"O", "O", "0"}, 
+{"O", "X", "X"}
 };
 
 for(int counter = 0; counter < partternManipulation.length; counter++) {

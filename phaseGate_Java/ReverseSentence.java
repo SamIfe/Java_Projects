@@ -4,15 +4,18 @@ public class ReverseSentence{
 	Scanner input = new Scanner(System.in);
 
 	System.out.print("Enter the sentences: ");
-	//String reverse = input.nextLine();
-String reverse = "There is a tide in the affairs of men";
+	String reverse = input.nextLine();
 
 String reverseWord [] = reverse.split(" ");
-String text = " ";
-	for (int rev = 0; rev < reverseWord.length; rev++){
-	text =  reverseWord[rev] + " " +text;
-			}
-		System.out.print("The reverse word is: " + text);
-		}
+
+
+	System.out.print("The reverse word is: ");
+	for (int rev = reverseWord.length -1; rev >= 0; rev--){
+
+		 System.out.print(reverseWord[rev]+ " ");
+	}
+	
+		
+	}
 
 }

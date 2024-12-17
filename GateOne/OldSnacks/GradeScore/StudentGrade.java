@@ -3,6 +3,21 @@ import java.util.Scanner;
 
 public class StudentGrade {
 	public static void main (String...arg) {
+
+System.out.print("""
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+	STUDENT GRADE APPLICATION
+
+
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+""");
+
 		Scanner grade = new Scanner (System.in);
 		System.out.print ("\n How many students do you have? : ");
 		int numberOfStudents = grade.nextInt();

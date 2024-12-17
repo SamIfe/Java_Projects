@@ -1,18 +1,16 @@
 import java.util.Scanner;
+public class TaskTwo{
+	public static void main (String...arg){
+	Scanner input = new Scanner(System.in); 
+	float sum = 0;
+	float average= 0;
+	for(int number = 0; number < 10; number++){
+	System.out.print("Enter number: ");
+	sum += input.nextInt();
 
-	public class TaskTwo {
-		public static void main(String[] args) {
-		
-			Scanner input = new Scanner(System.in);
-
-			int number = 1;
-
-			for(number =1 ; number <= 10; number++) {
-	
-			if(number % 2 != 1)
-
-			System.out.print(number);
 		}
+	average = sum / 10;
+	System.out.print("The average of the sum number is " + average);
 
 	}
 

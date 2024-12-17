@@ -9,7 +9,7 @@ public class MenstrualCycleApplication {
 		Scanner cycle = new Scanner(System.in);
 		DateTimeFormatter dateConverter = DateTimeFormatter.ofPattern("day/month/year");
 
-		try {
+	
 		System.out.print("Enter the start date of the last cycle (Your submission should be in Day/Month/Year format): ");
 		String lastCycleDate = cycle.nextLine();
 		LocalDate startDate = LocalDate.parse(lastCycleDate, dateConverter);
@@ -24,11 +24,11 @@ public class MenstrualCycleApplication {
 
 
 
-		} catch (DateTimeParseException err) {
+		/*} catch (DateTimeParseException err) {
 			System.out.println("Invalid date format: " + err.getMessage());
 
 		
-		}
+		}*/
 
 
 

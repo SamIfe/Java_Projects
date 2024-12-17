@@ -75,7 +75,7 @@ public class CheckOutApplication {
 		System.out.println("====================================================================================================================");
 
 
-		System.out.printf("%-30s%-10s%-10s%-15s%n", "ITEM(s)", "QTY", "PRICE", "TOTAL" );
+		System.out.printf("%-20s%-15s%-15s%-20s%n", "ITEM(s)", "QTY", "PRICE", "TOTAL" );
 
 
 		System.out.println("-------------------------------------------------------------------------------------------------------------------- \n");
@@ -86,7 +86,7 @@ public class CheckOutApplication {
 		double total = 0;
 	 	total = quantityPurchased.get(index) * priceForEach.get(index);
 		subtotal += total;
-		System.out.printf("%-30s%-10d%-10d%-15.2f%n",itemsPurchased.get(index),quantityPurchased.get(index), priceForEach.get(index), total);
+		System.out.printf("%-20s%-15d%-15d%-20.2f%n",itemsPurchased.get(index),quantityPurchased.get(index), priceForEach.get(index), total);
 		
 
 		}

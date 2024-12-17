@@ -4,6 +4,23 @@ public class CreditCardValidator{
 
 	public static void main (String...arg) {
         	Scanner creditCard = new Scanner(System.in);
+
+System.out.print("""
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+
+				CREDIT CARD VALIDATOR APPLICATION
+
+
+
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+""");
+
         	System.out.println("Please enter your credit card number:");
         	String cardNumber = creditCard.nextLine();
         	CreditCardValidator.validateCard(cardNumber);
